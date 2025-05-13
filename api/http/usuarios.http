@@ -1,0 +1,26 @@
+@baseURL = http://localhost:5000/api/usuarios
+
+###
+
+# @prompt senha
+
+POST {{baseURL}}/
+Content-Type: application/json
+
+{   
+    "nome" : "Davy Oliveira Ribeiro",
+    "email" : "davy@gmail.com",
+    "senha" : "{{senha}}"
+}
+
+###
+
+# @prompt senha
+
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+"email" : "davy@gmail.com",
+"senha" : "{{senha}}"
+}

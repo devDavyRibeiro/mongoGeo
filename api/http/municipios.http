@@ -1,0 +1,31 @@
+@baseURL = http://localhost:5000/api/municipios
+@id = 67d8c0f91166743df7e8c4ce
+
+@token = token
+###
+// GET - BY - ID
+GET {{baseURL}}/{id}
+Content-Type: :application/json
+access-token : {{token}}
+
+###
+// GET - BY - ID
+GET {{baseURL}}
+Content-Type: application/json
+
+###
+//Post
+POST {{baseURL}}
+Content-Type: application/json
+
+{  
+    "codigo_ibge": 5000,
+  "nome": "Abaeté",
+  "capital": false,
+  "codigo_municipio": 1234567,
+  "codigo_uf": 31,
+  "local":{
+    "type": "Point",
+    "coordinates": [-19.5,45.4]
+  }
+  }

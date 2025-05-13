@@ -1,0 +1,29 @@
+{
+  "name": "mongogeo",
+  "version": "1.0.0",
+  "description": "MongoGeo",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./api/index.js",
+    "dev": "nodemon ./api/index.js"
+  },
+  "keywords": [
+    "mongodb",
+    "geo"
+  ],
+  "author": "Davy Ribeiro",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
